@@ -33,8 +33,9 @@ BuildArch: noarch
 
 %description
 RelaxNGCC is a tool for generating Java source code from a given RELAX NG
-grammar. By embedding code fragments in the grammar like yacc or JavaCC, you can
-take appropriate actions while parsing valid XML documents against the grammar.
+grammar. By embedding code fragments in the grammar like yacc or JavaCC,
+you can take appropriate actions while parsing valid XML documents against
+the grammar.
 
 
 %package javadoc
