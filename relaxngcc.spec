@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name: relaxngcc
 Version: 1.12
 Release: 6.0%{?dist}
@@ -118,3 +118,22 @@ cp -pr javadoc/* %{buildroot}%{_javadocdir}/%{name}/.
 %files javadoc
 %{_javadocdir}/*
 %doc LICENSE.txt
+
+%changelog
+* Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.12-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.12-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Sat Jul 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.12-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Tue Feb 14 2012 Juan Hernandez <juan.hernandez@redhat.com> 1.12-3
+- Changed license to ASL 1.1
+
+* Tue Feb 14 2012 Juan Hernandez <juan.hernandez@redhat.com> 1.12-2
+- Cleanups of the spec file
+
+* Sat Jan 21 2012 Marek Goldmann <mgoldman@redhat.com> 1.12-1
+- Initial packaging
