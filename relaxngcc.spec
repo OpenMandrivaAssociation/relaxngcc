@@ -1,9 +1,9 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name: relaxngcc
 Version: 1.12
-Release: 6.0%{?dist}
+Release: 7.1
 Summary: RELAX NG Compiler Compiler
-
+Group:   Development/Java
 
 License: ASL 1.1
 
@@ -21,7 +21,9 @@ BuildRequires: relaxngDatatype
 BuildRequires: xerces-j2
 BuildRequires: xml-commons-apis
 BuildRequires: dos2unix
+BuildRequires: isorelax
 
+Requires: isorelax
 Requires: msv-msv
 Requires: msv-xsdlib
 Requires: relaxngDatatype
@@ -90,6 +92,7 @@ pushd lib
   ln -sf $(build-classpath xerces-j2) .
   ln -sf $(build-classpath msv-xsdlib) .
   ln -sf $(build-classpath javacc) .
+  ln -sf $(build-classpath isorelax) .
 popd
 
 # Put the ant build files in place:
