@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name: relaxngcc
 Version: 1.12
-Release: 7.1
+Release: 7.2
 Summary: RELAX NG Compiler Compiler
 Group:   Development/Java
 
