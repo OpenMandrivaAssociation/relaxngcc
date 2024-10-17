@@ -7,7 +7,7 @@ Group:   Development/Java
 
 License: ASL 1.1
 
-Url: http://relaxngcc.sourceforge.net/en/index.htm
+Url: https://relaxngcc.sourceforge.net/en/index.htm
 
 Source0: http://prdownloads.sourceforge.net/relaxngcc/relaxngcc-20031218.zip
 Source1: %{name}-build.xml
